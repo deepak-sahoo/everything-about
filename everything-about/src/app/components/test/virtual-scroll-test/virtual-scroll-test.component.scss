@@ -1,0 +1,22 @@
+.cdk-virtual-scroll-data-source-example .example-viewport {
+    height: calc(100vh - 20px);
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  .cdk-virtual-scroll-data-source-example .example-viewport .cdk-virtual-scroll-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+  
+  .cdk-virtual-scroll-data-source-example .example-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 30px;
+  }
+  .cdk-virtual-scroll-data-source-example .example-item:nth-child(even) {
+    margin-top: auto;
+  }
