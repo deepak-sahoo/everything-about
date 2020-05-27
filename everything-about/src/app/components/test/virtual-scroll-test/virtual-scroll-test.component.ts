@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'ea-virtual-scroll-test',
@@ -8,10 +8,9 @@ import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class VirtualScrollTestComponent implements OnInit {
-  items = Array.from({length: 100}).map((_, i) => `Item #${i}`);
+  items = Array.from({ length: 100 }).map((_, i) => `Item #${i}`);
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
+  
 }

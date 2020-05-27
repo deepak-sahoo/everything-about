@@ -37,7 +37,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
-
 @NgModule({
   declarations: [],
   imports: [
@@ -73,7 +72,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatSortModule,
     MatPaginatorModule,
     MatNativeDateModule,
-    ScrollingModule
+    ScrollingModule,
   ],
   exports: [
     CommonModule,
@@ -108,7 +107,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatSortModule,
     MatPaginatorModule,
     MatNativeDateModule,
-    ScrollingModule
+    ScrollingModule,
   ]
 })
 export class MaterialImportsModule { }
