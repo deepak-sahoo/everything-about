@@ -17,6 +17,10 @@
   background-color: white;
   margin: 30px;
 }
-.cdk-virtual-scroll-data-source-example .example-item:nth-child(even) {
+// .cdk-virtual-scroll-data-source-example .example-item:nth-child(even) {
+//   margin-top: auto;
+// }
+.cdk-virtual-scroll-data-source-example .example-item{
   margin-top: auto;
+  margin-bottom: auto;
 }
