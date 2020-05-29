@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
-import { CdkScrollable } from '@angular/cdk/overlay';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'ea-virtual-scroll-test',
@@ -9,11 +9,12 @@ import { CdkScrollable } from '@angular/cdk/overlay';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VirtualScrollTestComponent implements OnInit {
+
   items = Array.from({ length: 100 }).map((_, i) => `Item #${i}`);
-  constructor( public cdkScrollable:CdkScrollable) { }
+  constructor() { }
 
   ngOnInit(): void {
-    // cdkScrollable implementaion
+  
   }
   
 }
